@@ -3,142 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Natural Powders</title>
 
 <style>
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
 body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:#fffaf2;
-  color:#333;
+margin:0;
+font-family:Arial,sans-serif;
+background:#fffaf2;
+color:#333;
 }
 
 header{
-  background:#6b8e23;
-  color:white;
-  text-align:center;
-  padding:25px 15px;
+background:#6b8e23;
+color:white;
+text-align:center;
+padding:25px 10px;
 }
 
 header h1{
-  margin:0;
-  font-size:30px;
+margin:0;
+font-size:30px;
 }
 
 header p{
-  margin:8px 0 0;
+margin:8px 0;
 }
 
 .container{
-  max-width:1100px;
-  margin:auto;
-  padding:20px;
-}
-
-h2{
-  text-align:center;
+max-width:1100px;
+margin:auto;
+padding:20px;
 }
 
 .products{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:18px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:18px;
 }
 
 .card{
-  background:white;
-  border-radius:15px;
-  padding:12px;
-  text-align:center;
-  box-shadow:0 3px 12px #ccc;
+background:white;
+border-radius:15px;
+padding:12px;
+text-align:center;
+box-shadow:0 3px 12px #ccc;
 }
 
 .card img{
-  width:100%;
-  height:160px;
-  object-fit:cover;
-  border-radius:12px;
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:12px;
 }
 
 .card h3{
-  margin:10px 0 5px;
+margin:10px 0 5px;
 }
 
 .price{
-  color:#6b8e23;
-  font-size:18px;
-  font-weight:bold;
+font-weight:bold;
+color:#6b8e23;
+font-size:18px;
 }
 
 button{
-  border:0;
-  border-radius:8px;
-  padding:11px 16px;
-  margin:5px;
-  background:#6b8e23;
-  color:white;
-  font-size:15px;
-}
-
-button:hover{
-  opacity:.85;
+border:0;
+border-radius:8px;
+padding:11px 16px;
+margin:5px;
+background:#6b8e23;
+color:white;
+font-size:15px;
 }
 
 .order-box{
-  background:white;
-  padding:20px;
-  margin-top:30px;
-  border-radius:15px;
-  box-shadow:0 3px 12px #ccc;
+background:white;
+padding:20px;
+margin-top:30px;
+border-radius:15px;
+box-shadow:0 3px 12px #ccc;
+}
+
+.order-box h2{
+text-align:center;
 }
 
 input{
-  width:100%;
-  padding:12px;
-  margin:7px 0;
-  border:1px solid #ccc;
-  border-radius:8px;
-  font-size:15px;
+width:100%;
+padding:12px;
+margin:7px 0;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:15px;
 }
 
 #location{
-  font-size:14px;
-  margin-top:10px;
-}
-
-#preview{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  gap:12px;
-  margin-top:15px;
-}
-
-.previewCard{
-  background:white;
-  padding:8px;
-  border-radius:10px;
-  text-align:center;
-  box-shadow:0 2px 8px #ddd;
-}
-
-.previewCard img{
-  width:100%;
-  height:120px;
-  object-fit:cover;
-  border-radius:8px;
+font-size:14px;
 }
 
 footer{
-  margin-top:30px;
-  padding:20px;
-  background:#6b8e23;
-  color:white;
-  text-align:center;
+margin-top:30px;
+padding:20px;
+background:#6b8e23;
+color:white;
+text-align:center;
 }
 </style>
 </head>
@@ -146,102 +116,94 @@ footer{
 <body>
 
 <header>
-  <h1>🌿 Natural Powders</h1>
-  <p>Natural Products • 100 Gram Packs</p>
+<h1>🌿 Natural Powders</h1>
+<p>Natural Products • 100 Gram Packs</p>
 </header>
 
 <div class="container">
 
-<h2>Our Products</h2>
+<h2 style="text-align:center">Our Products</h2>
 
 <div class="products">
 
 <div class="card">
-<img src="Almonds.jpg" alt="Almonds">
+<img src="Almonds.jpg.jpeg">
 <h3>Almonds</h3>
 <p>100 Gram</p>
-<p class="price">₹100</p>
+<p class="price">₹111</p>
 <button onclick="order('Almonds')">Order</button>
 </div>
 
 <div class="card">
-<img src="cashews.jpg" alt="Cashews">
+<img src="cashews.jpg.jpeg">
 <h3>Cashews</h3>
 <p>100 Gram</p>
-<p class="price">₹100</p>
+<p class="price">₹130</p>
 <button onclick="order('Cashews')">Order</button>
 </div>
 
 <div class="card">
-<img src="walnuts.jpg" alt="Walnuts">
+<img src="walnuts.jpg.jpeg">
 <h3>Walnuts</h3>
 <p>100 Gram</p>
-<p class="price">₹100</p>
+<p class="price">₹130</p>
 <button onclick="order('Walnuts')">Order</button>
 </div>
 
 <div class="card">
-<img src="Pistachio.jpg" alt="Pistachios">
-<h3>Pistachios</h3>
+<img src="pistachio.jpg.jpeg">
+<h3>Pistachio</h3>
 <p>100 Gram</p>
-<p class="price">₹100</p>
-<button onclick="order('Pistachios')">Order</button>
+<p class="price">₹199</p>
+<button onclick="order('Pistachio')">Order</button>
 </div>
 
 <div class="card">
-<img src="dates.jpg" alt="Dates">
+<img src="dates.jpg.jpeg">
 <h3>Dates</h3>
 <p>100 Gram</p>
-<p class="price">₹100</p>
+<p class="price">₹49</p>
 <button onclick="order('Dates')">Order</button>
 </div>
 
 <div class="card">
-<img src="raisin.jpg" alt="Raisins">
+<img src="raisin.jpg.jpeg">
 <h3>Raisins</h3>
 <p>100 Gram</p>
-<p class="price">₹100</p>
+<p class="price">₹49</p>
 <button onclick="order('Raisins')">Order</button>
 </div>
 
 <div class="card">
-<img src="figs.jpg" alt="Figs">
-<h3>Figs</h3>
+<img src="abc.jpg.jpeg">
+<h3>ABC Powder</h3>
 <p>100 Gram</p>
-<p class="price">₹100</p>
-<button onclick="order('Figs')">Order</button>
+<p class="price">₹99</p>
+<button onclick="order('ABC Powder')">Order</button>
 </div>
 
 <div class="card">
-<img src="apricots.jpg" alt="Apricots">
-<h3>Apricots</h3>
+<img src="beetroot.jpg.jpeg">
+<h3>Beetroot Powder</h3>
 <p>100 Gram</p>
-<p class="price">₹100</p>
-<button onclick="order('Apricots')">Order</button>
+<p class="price">₹99</p>
+<button onclick="order('Beetroot Powder')">Order</button>
 </div>
 
 <div class="card">
-<img src="mixed nuts.jpg" alt="Mixed Nuts">
-<h3>Mixed Nuts</h3>
+<img src="nelli.jpg.jpeg">
+<h3>Nelli Powder</h3>
 <p>100 Gram</p>
-<p class="price">₹100</p>
-<button onclick="order('Mixed Nuts')">Order</button>
+<p class="price">₹99</p>
+<button onclick="order('Nelli Powder')">Order</button>
 </div>
 
 <div class="card">
-<img src="Brazil nuts.jpg" alt="Brazil Nuts">
-<h3>Brazil Nuts</h3>
+<img src="carrot.jpg.jpeg">
+<h3>Carrot Powder</h3>
 <p>100 Gram</p>
-<p class="price">₹100</p>
-<button onclick="order('Brazil Nuts')">Order</button>
-</div>
-
-<div class="card">
-<img src="hazelnut.jpg" alt="Hazelnuts">
-<h3>Hazelnuts</h3>
-<p>100 Gram</p>
-<p class="price">₹100</p>
-<button onclick="order('Hazelnuts')">Order</button>
+<p class="price">₹99</p>
+<button onclick="order('Carrot Powder')">Order</button>
 </div>
 
 </div>
@@ -259,36 +221,11 @@ footer{
 
 <input id="quantity" type="number" placeholder="Quantity">
 
-<button onclick="getLocation()">
-📍 Share My Location
-</button>
+<button onclick="getLocation()">📍 Share My Location</button>
 
-<p id="location">
-Location not shared
-</p>
+<p id="location">Location not shared</p>
 
-<button onclick="sendOrder()">
-📲 Order on WhatsApp
-</button>
-
-</div>
-
-
-<div class="order-box">
-
-<h2>➕ Add New Product Image</h2>
-
-<p>
-Select a new image from your phone:
-</p>
-
-<input
-type="file"
-accept="image/*"
-onchange="addImage(event)"
->
-
-<div id="preview"></div>
+<button onclick="sendOrder()">📲 Order on WhatsApp</button>
 
 </div>
 
@@ -296,168 +233,103 @@ onchange="addImage(event)"
 
 
 <footer>
-
 <p>🌿 Natural Powders</p>
 <p>📞 9008913495</p>
-
 </footer>
 
 
 <script>
 
-let latitude = "";
-let longitude = "";
+let latitude="";
+let longitude="";
 
+function order(product){
 
-function order(productName){
+document.getElementById("product").value=product;
 
-  document.getElementById("product").value = productName;
-
-  window.scrollTo({
-    top: document.body.scrollHeight,
-    behavior: "smooth"
-  });
+window.scrollTo({
+top:document.body.scrollHeight,
+behavior:"smooth"
+});
 
 }
 
 
 function getLocation(){
 
-  if(!navigator.geolocation){
+if(!navigator.geolocation){
 
-    document.getElementById("location").innerText =
-    "Location is not supported.";
+document.getElementById("location").innerText=
+"Location not supported.";
 
-    return;
-  }
+return;
 
-  navigator.geolocation.getCurrentPosition(
+}
 
-    function(position){
+navigator.geolocation.getCurrentPosition(
 
-      latitude = position.coords.latitude;
-      longitude = position.coords.longitude;
+function(position){
 
-      document.getElementById("location").innerHTML =
-      "✅ Location captured";
+latitude=position.coords.latitude;
+longitude=position.coords.longitude;
 
-    },
+document.getElementById("location").innerText=
+"✅ Location captured successfully";
 
-    function(){
+},
 
-      document.getElementById("location").innerText =
-      "❌ Please allow location permission.";
+function(){
 
-    }
+document.getElementById("location").innerText=
+"❌ Please allow location permission.";
 
-  );
+}
+
+);
 
 }
 
 
 function sendOrder(){
 
-  let name =
-  document.getElementById("name").value;
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let product=document.getElementById("product").value;
+let quantity=document.getElementById("quantity").value;
 
-  let phone =
-  document.getElementById("phone").value;
+if(!name || !product || !quantity){
 
-  let product =
-  document.getElementById("product").value;
+alert("Please fill Customer Name, Product and Quantity.");
 
-  let quantity =
-  document.getElementById("quantity").value;
-
-
-  if(!name || !product || !quantity){
-
-    alert("Please fill Customer Name, Product and Quantity.");
-
-    return;
-  }
-
-
-  let message =
-  "🌿 Natural Powders Order\n\n" +
-
-  "Customer Name: " + name + "\n" +
-
-  "Customer Phone: " + phone + "\n" +
-
-  "Product: " + product + "\n" +
-
-  "Quantity: " + quantity + "\n";
-
-
-  if(latitude && longitude){
-
-    message +=
-    "\n📍 Customer Location:\n" +
-    "https://www.google.com/maps?q=" +
-    latitude + "," + longitude;
-
-  }
-
-
-  let businessNumber = "919008913495";
-
-
-  let whatsappURL =
-  "https://wa.me/" +
-  businessNumber +
-  "?text=" +
-  encodeURIComponent(message);
-
-
-  window.open(
-    whatsappURL,
-    "_blank"
-  );
+return;
 
 }
 
+let message=
+"🌿 Natural Powders Order\n\n"+
+"Customer Name: "+name+"\n"+
+"Customer Phone: "+phone+"\n"+
+"Product: "+product+"\n"+
+"Quantity: "+quantity+"\n";
 
-function addImage(event){
+if(latitude && longitude){
 
-  let file = event.target.files[0];
+message+=
+"\n📍 Customer Location:\n"+
+"https://www.google.com/maps?q="+
+latitude+","+longitude;
 
-  if(!file){
-    return;
-  }
+}
 
+let businessNumber="919008913495";
 
-  let reader = new FileReader();
+let whatsappURL=
+"https://wa.me/"+
+businessNumber+
+"?text="+
+encodeURIComponent(message);
 
-
-  reader.onload = function(e){
-
-    let box =
-    document.createElement("div");
-
-    box.className =
-    "previewCard";
-
-
-    box.innerHTML =
-
-    "<img src='" +
-    e.target.result +
-    "' alt='New Product'>" +
-
-    "<p>" +
-    file.name +
-    "</p>";
-
-
-    document
-    .getElementById("preview")
-    .appendChild(box);
-
-  };
-
-
-  reader.readAsDataURL(file);
+window.open(whatsappURL,"_blank");
 
 }
 
