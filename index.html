@@ -7,109 +7,22 @@
 
 <style>
 *{box-sizing:border-box}
-
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#fffaf2;
-color:#333;
-}
-
-header{
-background:#6b8e23;
-color:white;
-text-align:center;
-padding:25px 10px;
-}
-
-header h1{
-margin:0;
-font-size:30px;
-}
-
-header p{
-margin:8px 0;
-}
-
-.container{
-max-width:1100px;
-margin:auto;
-padding:20px;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:18px;
-}
-
-.card{
-background:white;
-border-radius:15px;
-padding:12px;
-text-align:center;
-box-shadow:0 3px 12px #ccc;
-}
-
-.card img{
-width:100%;
-height:160px;
-object-fit:cover;
-border-radius:12px;
-}
-
-.card h3{
-margin:10px 0 5px;
-}
-
-.price{
-font-weight:bold;
-color:#6b8e23;
-font-size:18px;
-}
-
-button{
-border:0;
-border-radius:8px;
-padding:11px 16px;
-margin:5px;
-background:#6b8e23;
-color:white;
-font-size:15px;
-}
-
-.order-box{
-background:white;
-padding:20px;
-margin-top:30px;
-border-radius:15px;
-box-shadow:0 3px 12px #ccc;
-}
-
-.order-box h2{
-text-align:center;
-}
-
-input{
-width:100%;
-padding:12px;
-margin:7px 0;
-border:1px solid #ccc;
-border-radius:8px;
-font-size:15px;
-}
-
-#location{
-font-size:14px;
-}
-
-footer{
-margin-top:30px;
-padding:20px;
-background:#6b8e23;
-color:white;
-text-align:center;
-}
+body{margin:0;font-family:Arial,sans-serif;background:#fffaf2;color:#333}
+header{background:#6b8e23;color:white;text-align:center;padding:25px 10px}
+header h1{margin:0;font-size:30px}
+header p{margin:8px 0}
+.container{max-width:1100px;margin:auto;padding:20px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px}
+.card{background:white;border-radius:15px;padding:12px;text-align:center;box-shadow:0 3px 12px #ccc}
+.card img{width:100%;height:160px;object-fit:cover;border-radius:12px}
+.card h3{margin:10px 0 5px}
+.price{font-weight:bold;color:#6b8e23;font-size:18px}
+button{border:0;border-radius:8px;padding:11px 16px;margin:5px;background:#6b8e23;color:white;font-size:15px}
+.order-box{background:white;padding:20px;margin-top:30px;border-radius:15px;box-shadow:0 3px 12px #ccc}
+.order-box h2{text-align:center}
+input{width:100%;padding:12px;margin:7px 0;border:1px solid #ccc;border-radius:8px;font-size:15px}
+#location{font-size:14px}
+footer{margin-top:30px;padding:20px;background:#6b8e23;color:white;text-align:center}
 </style>
 </head>
 
@@ -127,7 +40,7 @@ text-align:center;
 <div class="products">
 
 <div class="card">
-<img src="Almonds.jpg.jpeg">
+<img src="Almonds.jpg">
 <h3>Almonds</h3>
 <p>100 Gram</p>
 <p class="price">₹111</p>
@@ -135,7 +48,7 @@ text-align:center;
 </div>
 
 <div class="card">
-<img src="cashews.jpg.jpeg">
+<img src="cashews.jpg">
 <h3>Cashews</h3>
 <p>100 Gram</p>
 <p class="price">₹130</p>
@@ -143,7 +56,7 @@ text-align:center;
 </div>
 
 <div class="card">
-<img src="walnuts.jpg.jpeg">
+<img src="walnuts.jpg">
 <h3>Walnuts</h3>
 <p>100 Gram</p>
 <p class="price">₹130</p>
@@ -151,7 +64,7 @@ text-align:center;
 </div>
 
 <div class="card">
-<img src="pistachio.jpg.jpeg">
+<img src="pistachio.jpg">
 <h3>Pistachio</h3>
 <p>100 Gram</p>
 <p class="price">₹199</p>
@@ -159,7 +72,7 @@ text-align:center;
 </div>
 
 <div class="card">
-<img src="dates.jpg.jpeg">
+<img src="dates.jpg">
 <h3>Dates</h3>
 <p>100 Gram</p>
 <p class="price">₹49</p>
@@ -167,7 +80,7 @@ text-align:center;
 </div>
 
 <div class="card">
-<img src="raisin.jpg.jpeg">
+<img src="raisin.jpg">
 <h3>Raisins</h3>
 <p>100 Gram</p>
 <p class="price">₹49</p>
@@ -175,7 +88,7 @@ text-align:center;
 </div>
 
 <div class="card">
-<img src="abc.jpg.jpeg">
+<img src="abc.jpg">
 <h3>ABC Powder</h3>
 <p>100 Gram</p>
 <p class="price">₹99</p>
@@ -183,7 +96,7 @@ text-align:center;
 </div>
 
 <div class="card">
-<img src="beetroot.jpg.jpeg">
+<img src="beetroot.jpg">
 <h3>Beetroot Powder</h3>
 <p>100 Gram</p>
 <p class="price">₹99</p>
@@ -191,7 +104,7 @@ text-align:center;
 </div>
 
 <div class="card">
-<img src="nelli.jpg.jpeg">
+<img src="nelli.jpg">
 <h3>Nelli Powder</h3>
 <p>100 Gram</p>
 <p class="price">₹99</p>
@@ -199,7 +112,7 @@ text-align:center;
 </div>
 
 <div class="card">
-<img src="carrot.jpg.jpeg">
+<img src="carrot.jpg">
 <h3>Carrot Powder</h3>
 <p>100 Gram</p>
 <p class="price">₹99</p>
@@ -207,7 +120,6 @@ text-align:center;
 </div>
 
 </div>
-
 
 <div class="order-box">
 
@@ -231,12 +143,10 @@ text-align:center;
 
 </div>
 
-
 <footer>
 <p>🌿 Natural Powders</p>
 <p>📞 9008913495</p>
 </footer>
-
 
 <script>
 
@@ -244,51 +154,32 @@ let latitude="";
 let longitude="";
 
 function order(product){
-
 document.getElementById("product").value=product;
-
 window.scrollTo({
 top:document.body.scrollHeight,
 behavior:"smooth"
 });
-
 }
-
 
 function getLocation(){
 
 if(!navigator.geolocation){
-
-document.getElementById("location").innerText=
-"Location not supported.";
-
+document.getElementById("location").innerText="Location not supported.";
 return;
-
 }
 
 navigator.geolocation.getCurrentPosition(
-
 function(position){
-
 latitude=position.coords.latitude;
 longitude=position.coords.longitude;
-
-document.getElementById("location").innerText=
-"✅ Location captured successfully";
-
+document.getElementById("location").innerText="✅ Location captured successfully";
 },
-
 function(){
-
-document.getElementById("location").innerText=
-"❌ Please allow location permission.";
-
+document.getElementById("location").innerText="❌ Please allow location permission.";
 }
-
 );
 
 }
-
 
 function sendOrder(){
 
@@ -298,11 +189,8 @@ let product=document.getElementById("product").value;
 let quantity=document.getElementById("quantity").value;
 
 if(!name || !product || !quantity){
-
 alert("Please fill Customer Name, Product and Quantity.");
-
 return;
-
 }
 
 let message=
@@ -313,24 +201,18 @@ let message=
 "Quantity: "+quantity+"\n";
 
 if(latitude && longitude){
-
 message+=
 "\n📍 Customer Location:\n"+
-"https://www.google.com/maps?q="+
-latitude+","+longitude;
-
+"https://www.google.com/maps?q="+latitude+","+longitude;
 }
 
 let businessNumber="919008913495";
 
 let whatsappURL=
-"https://wa.me/"+
-businessNumber+
-"?text="+
-encodeURIComponent(message);
+"https://wa.me/"+businessNumber+
+"?text="+encodeURIComponent(message);
 
 window.open(whatsappURL,"_blank");
-
 }
 
 </script>
